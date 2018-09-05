@@ -1299,6 +1299,50 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(18)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(19)
+
+/* template */
+var __vue_template__ = __webpack_require__(254)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/src/index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2964abc9"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -1318,7 +1362,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -1348,50 +1392,6 @@ __vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/we
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-11930d9f"
-__vue_options__.style = __vue_options__.style || {}
-__vue_styles__.forEach(function (module) {
-  for (var name in module) {
-    __vue_options__.style[name] = module[name]
-  }
-})
-if (typeof __register_static_styles__ === "function") {
-  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
-}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = []
-
-/* styles */
-__vue_styles__.push(__webpack_require__(18)
-)
-
-/* script */
-__vue_exports__ = __webpack_require__(19)
-
-/* template */
-var __vue_template__ = __webpack_require__(252)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/src/index.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2964abc9"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -1632,7 +1632,7 @@ module.exports = __vue_exports__
 
 /* weex initialized here, please do not move this line */
 var router = __webpack_require__(16);
-var App = __webpack_require__(6);
+var App = __webpack_require__(4);
 /* eslint-disable no-new */
 new Vue(Vue.util.extend({ el: '#root', router: router }, App));
 router.push('/');
@@ -1648,7 +1648,7 @@ var _vueRouter = __webpack_require__(17);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
-var _index = __webpack_require__(6);
+var _index = __webpack_require__(4);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -4336,7 +4336,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
 
 var modal = weex.requireModule('modal');
 exports.default = {
@@ -4364,7 +4363,7 @@ __vue_styles__.push(__webpack_require__(21)
 __vue_exports__ = __webpack_require__(22)
 
 /* template */
-var __vue_template__ = __webpack_require__(251)
+var __vue_template__ = __webpack_require__(255)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -4435,14 +4434,14 @@ module.exports = {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _weexUi = __webpack_require__(23);
 
-var _setNav = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../_mods/set-nav\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _setNav = __webpack_require__(251);
 
-var _config = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../tab-bar/config\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+var _config = __webpack_require__(252);
 
 var _config2 = _interopRequireDefault(_config);
 
@@ -4461,18 +4460,36 @@ var modal = weex.requireModule('modal'); //
 //
 //
 //
+//
+//
+//
+//
+//
 
 exports.default = {
-  components: { WxcTabBar: _weexUi.WxcTabBar },
-  data: function data() {
-    return {
-      tabStyles: _config2.default.tabStyles,
-      tabTitles: _config2.default.tabTitles
-    };
-  },
-  created: function created() {
-    (0, _setNav.setTitle)('TabBar');
-  }
+    components: { WxcTabBar: _weexUi.WxcTabBar },
+    data: function data() {
+        return {
+            tabStyles: _config2.default.tabStyles,
+            tabTitles: _config2.default.tabTitles,
+            durations: _config2.default.duration
+        };
+    },
+    created: function created() {
+        (0, _setNav.setTitle)('TabBar');
+        var tabbarHeight = _weexUi.Utils.env.getPageHeight();
+        this.tabStyles.height = tabbarHeight - this.tabStyles.height + 'px';
+    },
+
+    methods: {
+        changePage: function changePage(index) {
+            // this.$refs['wxc-tab-bar'].setPage(index);
+        },
+        wxcTabBarCurrentTabSelected: function wxcTabBarCurrentTabSelected(e) {
+            var index = e.page;
+            console.log(index);
+        }
+    }
 };
 
 /***/ }),
@@ -4499,7 +4516,7 @@ var _wxcButton = __webpack_require__(28);
 
 var _wxcButton2 = _interopRequireDefault(_wxcButton);
 
-var _wxcCell = __webpack_require__(4);
+var _wxcCell = __webpack_require__(5);
 
 var _wxcCell2 = _interopRequireDefault(_wxcCell);
 
@@ -5930,7 +5947,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _wxcCell = __webpack_require__(4);
+var _wxcCell = __webpack_require__(5);
 
 var _wxcCell2 = _interopRequireDefault(_wxcCell);
 
@@ -16047,7 +16064,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _wxcCell = __webpack_require__(4);
+var _wxcCell = __webpack_require__(5);
 
 var _wxcCell2 = _interopRequireDefault(_wxcCell);
 
@@ -16761,7 +16778,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
   components: {
-    WxcRichTextText: __webpack_require__(5),
+    WxcRichTextText: __webpack_require__(6),
     WxcRichTextLink: __webpack_require__(200),
     WxcRichTextIcon: __webpack_require__(203),
     WxcRichTextTag: __webpack_require__(14)
@@ -17031,7 +17048,7 @@ var _utils = __webpack_require__(0);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _wxcRichTextText = __webpack_require__(5);
+var _wxcRichTextText = __webpack_require__(6);
 
 var _wxcRichTextText2 = _interopRequireDefault(_wxcRichTextText);
 
@@ -19230,7 +19247,7 @@ var _utils = __webpack_require__(0);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _wxcRichTextText = __webpack_require__(5);
+var _wxcRichTextText = __webpack_require__(6);
 
 var _wxcRichTextText2 = _interopRequireDefault(_wxcRichTextText);
 
@@ -21165,13 +21182,160 @@ module.exports.render._withStripped = true
 
 /***/ }),
 /* 251 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setTitle = setTitle;
+
+var _index = __webpack_require__(4);
+
+/**
+ * CopyRight (C) 2017-2022 Alibaba Group Holding Limited.
+ * Created by Tw93 on 2017/7/26.
+ * demo设置标题和右上角按钮
+ */
+
+var navigationBar = weex.requireModule('navigationBar');
+var navigator = weex.requireModule('navigator');
+function setTitle(title) {
+  if (navigationBar && navigationBar.setTitle) {
+    var NOOP = function NOOP() {};
+    navigationBar.setTitle({
+      title: title
+    }, NOOP, NOOP);
+
+    var CALLBACK = function CALLBACK(event) {
+      if (event.index !== undefined) {
+        navigator.push({
+          url: 'https://h5.m.taobao.com/trip/weex-ui/index.html?_wx_tpl=https%3A%2F%2Fh5.m.taobao.com%2Ftrip%2Fweex-ui%2Fdemo%2Findex.native-min.js',
+          animated: true
+        }, NOOP);
+      }
+    };
+    _index.Utils.env.isAliWeex() && navigationBar.setRightItem({
+      items: [{
+        icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAABCUExURUxpcTMzMzMzMzAwMDIyMjIyMjExMTAwMDIyMjIyMjIyMjIyMjIyMjIyMjIyMjMzMzIyMjAwMDMzMzMzMzIyMjMzMxR9TlYAAAAVdFJOUwCgvzCfgD9AYMCQcO+P389/IG9Q0HT9VioAAADRSURBVEjH7ZXrDoMgDEZhVgFvu/L+r7pZgQlSLcuSJYvfHwKcU5HUKMSRj6P7Xhfx9hVdyBcYjmcbyEvJNmZeCK7hea5xCTzPgAXPMZCv3/M9A1b7aAx83hnA54XoSAOI82rCAPL98gZs3EfOgM37Wxuwc9+pgTw0V4qvGoiM1vd/l+fDfusW/NyOeaEPgFswyUI1nObckoLGl1BTHkEYbXzGqYERiR9sgmCTknEHf0mo5+EQfiM0GOx1HM5+TglkcoIsFe5bgsp+iIpM9V+//CcugShOKAURTAAAAABJRU5ErkJggg=='
+      }]
+    }, CALLBACK, NOOP);
+  }
+}
+
+/***/ }),
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * Created by Tw93 on 2016/11/4.
+ */
+
+exports.default = {
+
+  // 正常模式的tab title配置
+  tabTitles: [{
+    title: '首页',
+    icon: 'https://gw.alicdn.com/tfs/TB1MWXdSpXXXXcmXXXXXXXXXXXX-72-72.png',
+    activeIcon: 'https://gw.alicdn.com/tfs/TB1kCk2SXXXXXXFXFXXXXXXXXXX-72-72.png'
+  }, {
+    title: '推荐',
+    icon: 'https://gw.alicdn.com/tfs/TB1ARoKSXXXXXc9XVXXXXXXXXXX-72-72.png',
+    activeIcon: 'https://gw.alicdn.com/tfs/TB19Z72SXXXXXamXFXXXXXXXXXX-72-72.png'
+  }, {
+    title: '消息',
+    icon: 'https://gw.alicdn.com/tfs/TB1VKMISXXXXXbyaXXXXXXXXXXX-72-72.png',
+    activeIcon: 'https://gw.alicdn.com/tfs/TB1aTgZSXXXXXazXFXXXXXXXXXX-72-72.png'
+    // badge: 5
+  }, {
+    title: '我的',
+    icon: 'https://gw.alicdn.com/tfs/TB1Do3tSXXXXXXMaFXXXXXXXXXX-72-72.png',
+    activeIcon: 'https://gw.alicdn.com/tfs/TB1LiNhSpXXXXaWXXXXXXXXXXXX-72-72.png'
+    // dot: true
+  }],
+  tabStyles: {
+    bgColor: '#FFFFFF',
+    titleColor: '#666666',
+    activeTitleColor: '#3D3D3D',
+    activeBgColor: '#FFFFFF',
+    // isActiveTitleBold: true,
+    iconWidth: 50,
+    iconHeight: 60,
+    width: 160,
+    height: 120,
+    fontSize: 24,
+    textPaddingLeft: 10,
+    textPaddingRight: 10
+  },
+  duration: 0,
+  // 使用 iconFont 模式的tab title配置
+  tabIconFontTitles: [{
+    title: '首页',
+    codePoint: '\uE623'
+  }, {
+    title: '特别推荐',
+    codePoint: '\uE608'
+  }, {
+    title: '消息中心',
+    codePoint: '\uE752',
+    badge: 5
+  }, {
+    title: '我的主页',
+    codePoint: '\uE601',
+    dot: true
+  }],
+  tabIconFontStyles: {
+    bgColor: '#FFFFFF',
+    titleColor: '#666666',
+    activeTitleColor: '#3D3D3D',
+    activeBgColor: '#FFFFFF',
+    isActiveTitleBold: true,
+    width: 160,
+    height: 120,
+    fontSize: 24,
+    textPaddingLeft: 10,
+    textPaddingRight: 10,
+    iconFontSize: 50,
+    iconFontMarginBottom: 8,
+    iconFontColor: '#333333',
+    activeIconFontColor: 'red',
+    iconFontUrl: '//at.alicdn.com/t/font_501019_mauqv15evc1pp66r.ttf'
+  }
+};
+
+/***/ }),
+/* 253 */,
+/* 254 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["app-wrapper"]
+  }, [_c('router-view', {
+    staticClass: ["r-box"]
+  }), _c('tab-bar')], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 255 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('wxc-tab-bar', {
+    ref: "wxc-tab-bar",
     attrs: {
       "tabTitles": _vm.tabTitles,
       "tabStyles": _vm.tabStyles,
+      "duration": _vm.durations,
       "titleType": "icon"
     },
     on: {
@@ -21181,24 +21345,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["item-container"]
   }, [_c('text', [_vm._v("首页")])]), _c('div', {
     staticClass: ["item-container"]
-  }, [_c('text', [_vm._v("特别推荐")])]), _c('div', {
+  }, [_c('text', [_vm._v("推荐")])]), _c('div', {
     staticClass: ["item-container"]
-  }, [_c('text', [_vm._v("消息中心")])]), _c('div', {
+  }, [_c('text', [_vm._v("消息")])]), _c('div', {
     staticClass: ["item-container"]
-  }, [_c('text', [_vm._v("我的主页")])])])
-},staticRenderFns: []}
-module.exports.render._withStripped = true
-
-/***/ }),
-/* 252 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["app-wrapper"]
-  }, [_c('router-view', {
-    staticClass: ["r-box"]
-  }), _c('tab-bar')], 1)
+  }, [_c('text', [_vm._v("我的")])])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

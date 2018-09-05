@@ -12,21 +12,21 @@ export default {
       activeIcon: 'https://gw.alicdn.com/tfs/TB1kCk2SXXXXXXFXFXXXXXXXXXX-72-72.png'
     },
     {
-      title: '特别推荐',
+      title: '推荐',
       icon: 'https://gw.alicdn.com/tfs/TB1ARoKSXXXXXc9XVXXXXXXXXXX-72-72.png',
       activeIcon: 'https://gw.alicdn.com/tfs/TB19Z72SXXXXXamXFXXXXXXXXXX-72-72.png'
     },
     {
-      title: '消息中心',
+      title: '消息',
       icon: 'https://gw.alicdn.com/tfs/TB1VKMISXXXXXbyaXXXXXXXXXXX-72-72.png',
       activeIcon: 'https://gw.alicdn.com/tfs/TB1aTgZSXXXXXazXFXXXXXXXXXX-72-72.png',
-      badge: 5
+      // badge: 5
     },
     {
-      title: '我的主页',
+      title: '我的',
       icon: 'https://gw.alicdn.com/tfs/TB1Do3tSXXXXXXMaFXXXXXXXXXX-72-72.png',
       activeIcon: 'https://gw.alicdn.com/tfs/TB1LiNhSpXXXXaWXXXXXXXXXXXX-72-72.png',
-      dot: true
+      // dot: true
     }
   ],
   tabStyles: {
@@ -34,16 +34,16 @@ export default {
     titleColor: '#666666',
     activeTitleColor: '#3D3D3D',
     activeBgColor: '#FFFFFF',
-    isActiveTitleBold: true,
-    iconWidth: 70,
-    iconHeight: 70,
+    // isActiveTitleBold: true,
+    iconWidth: 50,
+    iconHeight: 60,
     width: 160,
     height: 120,
     fontSize: 24,
     textPaddingLeft: 10,
     textPaddingRight: 10
   },
-
+  duration : 0,
   // 使用 iconFont 模式的tab title配置
   tabIconFontTitles: [
     {

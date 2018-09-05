@@ -1,8 +1,7 @@
-<template>
-  <div class = "app-wrapper">
-      <router-view class="r-box"></router-view>
-      <tab-bar></tab-bar>
-  </div>
+<template lang="pug">
+    div.app-wrapper
+        router-view.r-box
+        tab-bar
 </template>
 
 <script>
