@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/yxw-test.iml" filepath="$PROJECT_DIR$/.idea/yxw-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/yxw-weex.iml" filepath="$PROJECT_DIR$/.idea/yxw-weex.iml" />
     </modules>
   </component>
 </project>

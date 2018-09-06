@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1303,14 +1303,14 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(18)
+__vue_styles__.push(__webpack_require__(19)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(19)
+__vue_exports__ = __webpack_require__(20)
 
 /* template */
-var __vue_template__ = __webpack_require__(254)
+var __vue_template__ = __webpack_require__(258)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -1322,7 +1322,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/src/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/src/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-2964abc9"
@@ -1388,7 +1388,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-text.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-text.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-11930d9f"
@@ -1407,6 +1407,226 @@ module.exports = __vue_exports__
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.WxcTag = exports.WxcTabPage = exports.WxcTabBar = exports.WxcStepper = exports.WxcSpecialRichText = exports.WxcSliderBar = exports.WxcSlideNav = exports.WxcSimpleFlow = exports.WxcSearchbar = exports.WxcRichText = exports.WxcResult = exports.WxcRefresher = exports.WxcRadio = exports.WxcProgress = exports.WxcPopup = exports.WxcPopover = exports.WxcPartLoading = exports.WxcPanItem = exports.WxcPageCalendar = exports.WxcOverlay = exports.WxcNoticebar = exports.WxcMinibar = exports.WxcMask = exports.WxcLotteryRain = exports.WxcLoading = exports.WxcLightbox = exports.WxcIndexlist = exports.WxcIcon = exports.WxcGridSelect = exports.WxcFullPage = exports.WxcEpSlider = exports.WxcDialog = exports.WxcCountdown = exports.WxcCity = exports.WxcCheckboxList = exports.WxcCheckbox = exports.WxcCell = exports.WxcButton = exports.Utils = exports.BindEnv = undefined;
+
+var _bindEnv = __webpack_require__(24);
+
+var _bindEnv2 = _interopRequireDefault(_bindEnv);
+
+var _utils = __webpack_require__(0);
+
+var _utils2 = _interopRequireDefault(_utils);
+
+var _wxcButton = __webpack_require__(28);
+
+var _wxcButton2 = _interopRequireDefault(_wxcButton);
+
+var _wxcCell = __webpack_require__(5);
+
+var _wxcCell2 = _interopRequireDefault(_wxcCell);
+
+var _wxcCheckbox = __webpack_require__(38);
+
+var _wxcCheckbox2 = _interopRequireDefault(_wxcCheckbox);
+
+var _wxcCheckboxList = __webpack_require__(43);
+
+var _wxcCheckboxList2 = _interopRequireDefault(_wxcCheckboxList);
+
+var _wxcCity = __webpack_require__(47);
+
+var _wxcCity2 = _interopRequireDefault(_wxcCity);
+
+var _wxcCountdown = __webpack_require__(73);
+
+var _wxcCountdown2 = _interopRequireDefault(_wxcCountdown);
+
+var _wxcDialog = __webpack_require__(78);
+
+var _wxcDialog2 = _interopRequireDefault(_wxcDialog);
+
+var _wxcEpSlider = __webpack_require__(88);
+
+var _wxcEpSlider2 = _interopRequireDefault(_wxcEpSlider);
+
+var _wxcFullPage = __webpack_require__(93);
+
+var _wxcFullPage2 = _interopRequireDefault(_wxcFullPage);
+
+var _wxcGridSelect = __webpack_require__(98);
+
+var _wxcGridSelect2 = _interopRequireDefault(_wxcGridSelect);
+
+var _wxcIcon = __webpack_require__(107);
+
+var _wxcIcon2 = _interopRequireDefault(_wxcIcon);
+
+var _wxcIndexlist = __webpack_require__(11);
+
+var _wxcIndexlist2 = _interopRequireDefault(_wxcIndexlist);
+
+var _wxcLightbox = __webpack_require__(113);
+
+var _wxcLightbox2 = _interopRequireDefault(_wxcLightbox);
+
+var _wxcLoading = __webpack_require__(122);
+
+var _wxcLoading2 = _interopRequireDefault(_wxcLoading);
+
+var _wxcLotteryRain = __webpack_require__(127);
+
+var _wxcLotteryRain2 = _interopRequireDefault(_wxcLotteryRain);
+
+var _wxcMask = __webpack_require__(12);
+
+var _wxcMask2 = _interopRequireDefault(_wxcMask);
+
+var _wxcMinibar = __webpack_require__(14);
+
+var _wxcMinibar2 = _interopRequireDefault(_wxcMinibar);
+
+var _wxcNoticebar = __webpack_require__(143);
+
+var _wxcNoticebar2 = _interopRequireDefault(_wxcNoticebar);
+
+var _wxcOverlay = __webpack_require__(3);
+
+var _wxcOverlay2 = _interopRequireDefault(_wxcOverlay);
+
+var _wxcPageCalendar = __webpack_require__(149);
+
+var _wxcPageCalendar2 = _interopRequireDefault(_wxcPageCalendar);
+
+var _wxcPanItem = __webpack_require__(155);
+
+var _wxcPanItem2 = _interopRequireDefault(_wxcPanItem);
+
+var _wxcPartLoading = __webpack_require__(159);
+
+var _wxcPartLoading2 = _interopRequireDefault(_wxcPartLoading);
+
+var _wxcPopover = __webpack_require__(163);
+
+var _wxcPopover2 = _interopRequireDefault(_wxcPopover);
+
+var _wxcPopup = __webpack_require__(168);
+
+var _wxcPopup2 = _interopRequireDefault(_wxcPopup);
+
+var _wxcProgress = __webpack_require__(173);
+
+var _wxcProgress2 = _interopRequireDefault(_wxcProgress);
+
+var _wxcRadio = __webpack_require__(178);
+
+var _wxcRadio2 = _interopRequireDefault(_wxcRadio);
+
+var _wxcRefresher = __webpack_require__(188);
+
+var _wxcRefresher2 = _interopRequireDefault(_wxcRefresher);
+
+var _wxcResult = __webpack_require__(10);
+
+var _wxcResult2 = _interopRequireDefault(_wxcResult);
+
+var _wxcRichText = __webpack_require__(193);
+
+var _wxcRichText2 = _interopRequireDefault(_wxcRichText);
+
+var _wxcSearchbar = __webpack_require__(9);
+
+var _wxcSearchbar2 = _interopRequireDefault(_wxcSearchbar);
+
+var _wxcSimpleFlow = __webpack_require__(211);
+
+var _wxcSimpleFlow2 = _interopRequireDefault(_wxcSimpleFlow);
+
+var _wxcSlideNav = __webpack_require__(216);
+
+var _wxcSlideNav2 = _interopRequireDefault(_wxcSlideNav);
+
+var _wxcSliderBar = __webpack_require__(221);
+
+var _wxcSliderBar2 = _interopRequireDefault(_wxcSliderBar);
+
+var _wxcSpecialRichText = __webpack_require__(226);
+
+var _wxcSpecialRichText2 = _interopRequireDefault(_wxcSpecialRichText);
+
+var _wxcStepper = __webpack_require__(231);
+
+var _wxcStepper2 = _interopRequireDefault(_wxcStepper);
+
+var _wxcTabBar = __webpack_require__(236);
+
+var _wxcTabBar2 = _interopRequireDefault(_wxcTabBar);
+
+var _wxcTabPage = __webpack_require__(241);
+
+var _wxcTabPage2 = _interopRequireDefault(_wxcTabPage);
+
+var _wxcTag = __webpack_require__(246);
+
+var _wxcTag2 = _interopRequireDefault(_wxcTag);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * CopyRight (C) 2017-2022 Alibaba Group Holding Limited.
+ * Created by Tw93 on 17/09/25
+ */
+
+exports.BindEnv = _bindEnv2.default;
+exports.Utils = _utils2.default;
+exports.WxcButton = _wxcButton2.default;
+exports.WxcCell = _wxcCell2.default;
+exports.WxcCheckbox = _wxcCheckbox2.default;
+exports.WxcCheckboxList = _wxcCheckboxList2.default;
+exports.WxcCity = _wxcCity2.default;
+exports.WxcCountdown = _wxcCountdown2.default;
+exports.WxcDialog = _wxcDialog2.default;
+exports.WxcEpSlider = _wxcEpSlider2.default;
+exports.WxcFullPage = _wxcFullPage2.default;
+exports.WxcGridSelect = _wxcGridSelect2.default;
+exports.WxcIcon = _wxcIcon2.default;
+exports.WxcIndexlist = _wxcIndexlist2.default;
+exports.WxcLightbox = _wxcLightbox2.default;
+exports.WxcLoading = _wxcLoading2.default;
+exports.WxcLotteryRain = _wxcLotteryRain2.default;
+exports.WxcMask = _wxcMask2.default;
+exports.WxcMinibar = _wxcMinibar2.default;
+exports.WxcNoticebar = _wxcNoticebar2.default;
+exports.WxcOverlay = _wxcOverlay2.default;
+exports.WxcPageCalendar = _wxcPageCalendar2.default;
+exports.WxcPanItem = _wxcPanItem2.default;
+exports.WxcPartLoading = _wxcPartLoading2.default;
+exports.WxcPopover = _wxcPopover2.default;
+exports.WxcPopup = _wxcPopup2.default;
+exports.WxcProgress = _wxcProgress2.default;
+exports.WxcRadio = _wxcRadio2.default;
+exports.WxcRefresher = _wxcRefresher2.default;
+exports.WxcResult = _wxcResult2.default;
+exports.WxcRichText = _wxcRichText2.default;
+exports.WxcSearchbar = _wxcSearchbar2.default;
+exports.WxcSimpleFlow = _wxcSimpleFlow2.default;
+exports.WxcSlideNav = _wxcSlideNav2.default;
+exports.WxcSliderBar = _wxcSliderBar2.default;
+exports.WxcSpecialRichText = _wxcSpecialRichText2.default;
+exports.WxcStepper = _wxcStepper2.default;
+exports.WxcTabBar = _wxcTabBar2.default;
+exports.WxcTabPage = _wxcTabPage2.default;
+exports.WxcTag = _wxcTag2.default;
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -1432,7 +1652,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-checkbox/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-checkbox/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-a98566e6"
@@ -1450,7 +1670,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1472,7 +1692,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1494,7 +1714,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1516,7 +1736,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1538,7 +1758,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1556,7 +1776,7 @@ var BLACK_GIF = exports.BLACK_GIF = 'https://img.alicdn.com/tfs/TB1Ep_9NVXXXXb8X
 var PART = exports.PART = 'https://gtms02.alicdn.com/tfs/TB1y4QbSXXXXXbgapXXXXXXXXXX-50-50.gif';
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1578,7 +1798,7 @@ Object.defineProperty(exports, 'default', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
@@ -1604,7 +1824,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-tag.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-tag.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-19b7ad98"
@@ -1622,7 +1842,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1631,20 +1851,20 @@ module.exports = __vue_exports__
 /*global Vue*/
 
 /* weex initialized here, please do not move this line */
-var router = __webpack_require__(16);
+var router = __webpack_require__(17);
 var App = __webpack_require__(4);
 /* eslint-disable no-new */
 new Vue(Vue.util.extend({ el: '#root', router: router }, App));
 router.push('/');
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _vueRouter = __webpack_require__(17);
+var _vueRouter = __webpack_require__(18);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
@@ -1660,13 +1880,13 @@ Vue.use(_vueRouter2.default);
 module.exports = new _vueRouter2.default({
   routes: [{
     path: '/',
-    name: 'HomePage',
+    name: 'index',
     component: _index2.default
   }]
 });
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4297,7 +4517,7 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -4314,7 +4534,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4324,7 +4544,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _tabbar = __webpack_require__(20);
+var _tabbar = __webpack_require__(21);
 
 var _tabbar2 = _interopRequireDefault(_tabbar);
 
@@ -4349,21 +4569,21 @@ exports.default = {
 };
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(21)
+__vue_styles__.push(__webpack_require__(22)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(22)
+__vue_exports__ = __webpack_require__(23)
 
 /* template */
-var __vue_template__ = __webpack_require__(255)
+var __vue_template__ = __webpack_require__(257)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -4375,7 +4595,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/src/components/tabbar.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/src/components/tabbar.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-04ac836e"
@@ -4393,7 +4613,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -4427,7 +4647,7 @@ module.exports = {
 }
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4437,7 +4657,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _weexUi = __webpack_require__(23);
+var _weexUi = __webpack_require__(7);
 
 var _setNav = __webpack_require__(251);
 
@@ -4445,9 +4665,13 @@ var _config = __webpack_require__(252);
 
 var _config2 = _interopRequireDefault(_config);
 
+var _homepage = __webpack_require__(253);
+
+var _homepage2 = _interopRequireDefault(_homepage);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var modal = weex.requireModule('modal'); //
+//
 //
 //
 //
@@ -4466,8 +4690,10 @@ var modal = weex.requireModule('modal'); //
 //
 //
 
+var modal = weex.requireModule('modal');
+
 exports.default = {
-    components: { WxcTabBar: _weexUi.WxcTabBar },
+    components: { WxcTabBar: _weexUi.WxcTabBar, 'home-page': _homepage2.default },
     data: function data() {
         return {
             tabStyles: _config2.default.tabStyles,
@@ -4482,235 +4708,12 @@ exports.default = {
     },
 
     methods: {
-        changePage: function changePage(index) {
-            // this.$refs['wxc-tab-bar'].setPage(index);
-        },
         wxcTabBarCurrentTabSelected: function wxcTabBarCurrentTabSelected(e) {
             var index = e.page;
             console.log(index);
         }
     }
 };
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.WxcTag = exports.WxcTabPage = exports.WxcTabBar = exports.WxcStepper = exports.WxcSpecialRichText = exports.WxcSliderBar = exports.WxcSlideNav = exports.WxcSimpleFlow = exports.WxcSearchbar = exports.WxcRichText = exports.WxcResult = exports.WxcRefresher = exports.WxcRadio = exports.WxcProgress = exports.WxcPopup = exports.WxcPopover = exports.WxcPartLoading = exports.WxcPanItem = exports.WxcPageCalendar = exports.WxcOverlay = exports.WxcNoticebar = exports.WxcMinibar = exports.WxcMask = exports.WxcLotteryRain = exports.WxcLoading = exports.WxcLightbox = exports.WxcIndexlist = exports.WxcIcon = exports.WxcGridSelect = exports.WxcFullPage = exports.WxcEpSlider = exports.WxcDialog = exports.WxcCountdown = exports.WxcCity = exports.WxcCheckboxList = exports.WxcCheckbox = exports.WxcCell = exports.WxcButton = exports.Utils = exports.BindEnv = undefined;
-
-var _bindEnv = __webpack_require__(24);
-
-var _bindEnv2 = _interopRequireDefault(_bindEnv);
-
-var _utils = __webpack_require__(0);
-
-var _utils2 = _interopRequireDefault(_utils);
-
-var _wxcButton = __webpack_require__(28);
-
-var _wxcButton2 = _interopRequireDefault(_wxcButton);
-
-var _wxcCell = __webpack_require__(5);
-
-var _wxcCell2 = _interopRequireDefault(_wxcCell);
-
-var _wxcCheckbox = __webpack_require__(38);
-
-var _wxcCheckbox2 = _interopRequireDefault(_wxcCheckbox);
-
-var _wxcCheckboxList = __webpack_require__(43);
-
-var _wxcCheckboxList2 = _interopRequireDefault(_wxcCheckboxList);
-
-var _wxcCity = __webpack_require__(47);
-
-var _wxcCity2 = _interopRequireDefault(_wxcCity);
-
-var _wxcCountdown = __webpack_require__(73);
-
-var _wxcCountdown2 = _interopRequireDefault(_wxcCountdown);
-
-var _wxcDialog = __webpack_require__(78);
-
-var _wxcDialog2 = _interopRequireDefault(_wxcDialog);
-
-var _wxcEpSlider = __webpack_require__(88);
-
-var _wxcEpSlider2 = _interopRequireDefault(_wxcEpSlider);
-
-var _wxcFullPage = __webpack_require__(93);
-
-var _wxcFullPage2 = _interopRequireDefault(_wxcFullPage);
-
-var _wxcGridSelect = __webpack_require__(98);
-
-var _wxcGridSelect2 = _interopRequireDefault(_wxcGridSelect);
-
-var _wxcIcon = __webpack_require__(107);
-
-var _wxcIcon2 = _interopRequireDefault(_wxcIcon);
-
-var _wxcIndexlist = __webpack_require__(10);
-
-var _wxcIndexlist2 = _interopRequireDefault(_wxcIndexlist);
-
-var _wxcLightbox = __webpack_require__(113);
-
-var _wxcLightbox2 = _interopRequireDefault(_wxcLightbox);
-
-var _wxcLoading = __webpack_require__(122);
-
-var _wxcLoading2 = _interopRequireDefault(_wxcLoading);
-
-var _wxcLotteryRain = __webpack_require__(127);
-
-var _wxcLotteryRain2 = _interopRequireDefault(_wxcLotteryRain);
-
-var _wxcMask = __webpack_require__(11);
-
-var _wxcMask2 = _interopRequireDefault(_wxcMask);
-
-var _wxcMinibar = __webpack_require__(13);
-
-var _wxcMinibar2 = _interopRequireDefault(_wxcMinibar);
-
-var _wxcNoticebar = __webpack_require__(143);
-
-var _wxcNoticebar2 = _interopRequireDefault(_wxcNoticebar);
-
-var _wxcOverlay = __webpack_require__(3);
-
-var _wxcOverlay2 = _interopRequireDefault(_wxcOverlay);
-
-var _wxcPageCalendar = __webpack_require__(149);
-
-var _wxcPageCalendar2 = _interopRequireDefault(_wxcPageCalendar);
-
-var _wxcPanItem = __webpack_require__(155);
-
-var _wxcPanItem2 = _interopRequireDefault(_wxcPanItem);
-
-var _wxcPartLoading = __webpack_require__(159);
-
-var _wxcPartLoading2 = _interopRequireDefault(_wxcPartLoading);
-
-var _wxcPopover = __webpack_require__(163);
-
-var _wxcPopover2 = _interopRequireDefault(_wxcPopover);
-
-var _wxcPopup = __webpack_require__(168);
-
-var _wxcPopup2 = _interopRequireDefault(_wxcPopup);
-
-var _wxcProgress = __webpack_require__(173);
-
-var _wxcProgress2 = _interopRequireDefault(_wxcProgress);
-
-var _wxcRadio = __webpack_require__(178);
-
-var _wxcRadio2 = _interopRequireDefault(_wxcRadio);
-
-var _wxcRefresher = __webpack_require__(188);
-
-var _wxcRefresher2 = _interopRequireDefault(_wxcRefresher);
-
-var _wxcResult = __webpack_require__(9);
-
-var _wxcResult2 = _interopRequireDefault(_wxcResult);
-
-var _wxcRichText = __webpack_require__(193);
-
-var _wxcRichText2 = _interopRequireDefault(_wxcRichText);
-
-var _wxcSearchbar = __webpack_require__(8);
-
-var _wxcSearchbar2 = _interopRequireDefault(_wxcSearchbar);
-
-var _wxcSimpleFlow = __webpack_require__(211);
-
-var _wxcSimpleFlow2 = _interopRequireDefault(_wxcSimpleFlow);
-
-var _wxcSlideNav = __webpack_require__(216);
-
-var _wxcSlideNav2 = _interopRequireDefault(_wxcSlideNav);
-
-var _wxcSliderBar = __webpack_require__(221);
-
-var _wxcSliderBar2 = _interopRequireDefault(_wxcSliderBar);
-
-var _wxcSpecialRichText = __webpack_require__(226);
-
-var _wxcSpecialRichText2 = _interopRequireDefault(_wxcSpecialRichText);
-
-var _wxcStepper = __webpack_require__(231);
-
-var _wxcStepper2 = _interopRequireDefault(_wxcStepper);
-
-var _wxcTabBar = __webpack_require__(236);
-
-var _wxcTabBar2 = _interopRequireDefault(_wxcTabBar);
-
-var _wxcTabPage = __webpack_require__(241);
-
-var _wxcTabPage2 = _interopRequireDefault(_wxcTabPage);
-
-var _wxcTag = __webpack_require__(246);
-
-var _wxcTag2 = _interopRequireDefault(_wxcTag);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/**
- * CopyRight (C) 2017-2022 Alibaba Group Holding Limited.
- * Created by Tw93 on 17/09/25
- */
-
-exports.BindEnv = _bindEnv2.default;
-exports.Utils = _utils2.default;
-exports.WxcButton = _wxcButton2.default;
-exports.WxcCell = _wxcCell2.default;
-exports.WxcCheckbox = _wxcCheckbox2.default;
-exports.WxcCheckboxList = _wxcCheckboxList2.default;
-exports.WxcCity = _wxcCity2.default;
-exports.WxcCountdown = _wxcCountdown2.default;
-exports.WxcDialog = _wxcDialog2.default;
-exports.WxcEpSlider = _wxcEpSlider2.default;
-exports.WxcFullPage = _wxcFullPage2.default;
-exports.WxcGridSelect = _wxcGridSelect2.default;
-exports.WxcIcon = _wxcIcon2.default;
-exports.WxcIndexlist = _wxcIndexlist2.default;
-exports.WxcLightbox = _wxcLightbox2.default;
-exports.WxcLoading = _wxcLoading2.default;
-exports.WxcLotteryRain = _wxcLotteryRain2.default;
-exports.WxcMask = _wxcMask2.default;
-exports.WxcMinibar = _wxcMinibar2.default;
-exports.WxcNoticebar = _wxcNoticebar2.default;
-exports.WxcOverlay = _wxcOverlay2.default;
-exports.WxcPageCalendar = _wxcPageCalendar2.default;
-exports.WxcPanItem = _wxcPanItem2.default;
-exports.WxcPartLoading = _wxcPartLoading2.default;
-exports.WxcPopover = _wxcPopover2.default;
-exports.WxcPopup = _wxcPopup2.default;
-exports.WxcProgress = _wxcProgress2.default;
-exports.WxcRadio = _wxcRadio2.default;
-exports.WxcRefresher = _wxcRefresher2.default;
-exports.WxcResult = _wxcResult2.default;
-exports.WxcRichText = _wxcRichText2.default;
-exports.WxcSearchbar = _wxcSearchbar2.default;
-exports.WxcSimpleFlow = _wxcSimpleFlow2.default;
-exports.WxcSlideNav = _wxcSlideNav2.default;
-exports.WxcSliderBar = _wxcSliderBar2.default;
-exports.WxcSpecialRichText = _wxcSpecialRichText2.default;
-exports.WxcStepper = _wxcStepper2.default;
-exports.WxcTabBar = _wxcTabBar2.default;
-exports.WxcTabPage = _wxcTabPage2.default;
-exports.WxcTag = _wxcTag2.default;
 
 /***/ }),
 /* 24 */
@@ -5342,7 +5345,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-button/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-button/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-6273a8fc"
@@ -5600,7 +5603,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-cell/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-cell/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-eff0e228"
@@ -5911,7 +5914,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _index = __webpack_require__(7);
+var _index = __webpack_require__(8);
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
@@ -6178,7 +6181,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-checkbox-list/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-checkbox-list/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -6205,7 +6208,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _index = __webpack_require__(7);
+var _index = __webpack_require__(8);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -6337,7 +6340,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-city/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-city/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-0f3de7b5"
@@ -6427,15 +6430,15 @@ var _tab = __webpack_require__(53);
 
 var _tab2 = _interopRequireDefault(_tab);
 
-var _wxcSearchbar = __webpack_require__(8);
+var _wxcSearchbar = __webpack_require__(9);
 
 var _wxcSearchbar2 = _interopRequireDefault(_wxcSearchbar);
 
-var _wxcResult = __webpack_require__(9);
+var _wxcResult = __webpack_require__(10);
 
 var _wxcResult2 = _interopRequireDefault(_wxcResult);
 
-var _wxcIndexlist = __webpack_require__(10);
+var _wxcIndexlist = __webpack_require__(11);
 
 var _wxcIndexlist2 = _interopRequireDefault(_wxcIndexlist);
 
@@ -6737,7 +6740,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-city/tab.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-city/tab.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-03878890"
@@ -6954,7 +6957,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-searchbar/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-searchbar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-6447ff37"
@@ -7581,7 +7584,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-result/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-result/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-50c76027"
@@ -7915,7 +7918,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-indexlist/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-indexlist/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3aacf008"
@@ -8600,7 +8603,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-countdown/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-countdown/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3e737f06"
@@ -8981,7 +8984,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-dialog/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-dialog/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-b50148dc"
@@ -9320,7 +9323,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-overlay/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-overlay/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-389bbc1c"
@@ -9619,7 +9622,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-ep-slider/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-ep-slider/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1cad4c0f"
@@ -10190,7 +10193,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-tab-page/full-page.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-tab-page/full-page.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1f0ca268"
@@ -10689,7 +10692,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-grid-select/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-grid-select/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3e7db4ef"
@@ -10902,7 +10905,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-grid-select/option.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-grid-select/option.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-8da092b0"
@@ -11204,7 +11207,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-icon/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-icon/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-37129143"
@@ -11429,7 +11432,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-lightbox/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-lightbox/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-5a41033f"
@@ -11512,7 +11515,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 
-var _wxcMask = __webpack_require__(11);
+var _wxcMask = __webpack_require__(12);
 
 var _wxcMask2 = _interopRequireDefault(_wxcMask);
 
@@ -11588,7 +11591,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-mask/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-mask/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-419c27f6"
@@ -12034,7 +12037,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-loading/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-loading/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-7a7a2208"
@@ -12108,7 +12111,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _type = __webpack_require__(12);
+var _type = __webpack_require__(13);
 
 var _utils = __webpack_require__(0);
 
@@ -12366,7 +12369,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-lottery-rain/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-lottery-rain/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-769f96a2"
@@ -12488,7 +12491,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-lottery-rain/rain-item.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-lottery-rain/rain-item.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-588ffb08"
@@ -12954,7 +12957,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-minibar/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-minibar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-112985b0"
@@ -13258,7 +13261,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-noticebar/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-noticebar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-76883c07"
@@ -13623,7 +13626,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-page-calendar/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-page-calendar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-8ef13670"
@@ -13770,7 +13773,7 @@ var _utils = __webpack_require__(0);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _wxcMinibar = __webpack_require__(13);
+var _wxcMinibar = __webpack_require__(14);
 
 var _wxcMinibar2 = _interopRequireDefault(_wxcMinibar);
 
@@ -14494,7 +14497,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-pan-item/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-pan-item/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -14682,7 +14685,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-part-loading/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-part-loading/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -14709,7 +14712,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _type = __webpack_require__(12);
+var _type = __webpack_require__(13);
 
 exports.default = {
   props: {
@@ -14823,7 +14826,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-popover/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-popover/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1a7e9f9e"
@@ -15330,7 +15333,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-popup/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-popup/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-28869db8"
@@ -15687,7 +15690,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-progress/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-progress/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-33517677"
@@ -15873,7 +15876,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-radio/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-radio/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-62bfaa47"
@@ -16022,7 +16025,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-radio/item.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-radio/item.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-620616a4"
@@ -16297,7 +16300,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-refresher/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-refresher/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-48062e54"
@@ -16726,7 +16729,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-7a28d4ec"
@@ -16781,7 +16784,7 @@ exports.default = {
     WxcRichTextText: __webpack_require__(6),
     WxcRichTextLink: __webpack_require__(200),
     WxcRichTextIcon: __webpack_require__(203),
-    WxcRichTextTag: __webpack_require__(14)
+    WxcRichTextTag: __webpack_require__(15)
   },
   props: {
     configList: {
@@ -17017,7 +17020,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-link.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-link.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -17154,7 +17157,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-icon.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-icon.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-21697eeb"
@@ -17613,7 +17616,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-simple-flow/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-simple-flow/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-4fb15c75"
@@ -18017,7 +18020,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-slide-nav/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-slide-nav/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1aea71d3"
@@ -18359,7 +18362,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-slider-bar/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-slider-bar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3517959e"
@@ -19092,7 +19095,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-special-rich-text/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-special-rich-text/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3e39ed76"
@@ -19251,7 +19254,7 @@ var _wxcRichTextText = __webpack_require__(6);
 
 var _wxcRichTextText2 = _interopRequireDefault(_wxcRichTextText);
 
-var _wxcRichTextTag = __webpack_require__(14);
+var _wxcRichTextTag = __webpack_require__(15);
 
 var _wxcRichTextTag2 = _interopRequireDefault(_wxcRichTextTag);
 
@@ -19513,7 +19516,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-stepper/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-stepper/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-8a149d46"
@@ -19856,7 +19859,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-tab-bar/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-tab-bar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-0d85b832"
@@ -20350,7 +20353,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-tab-page/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-tab-page/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1b95b591"
@@ -20898,7 +20901,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/larry/Documents/Hybrid/yxw-weex/node_modules/weex-ui/packages/wxc-tag/index.vue"
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/node_modules/weex-ui/packages/wxc-tag/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-05972366"
@@ -21240,8 +21243,9 @@ Object.defineProperty(exports, "__esModule", {
  */
 
 exports.default = {
-
-  // 正常模式的tab title配置
+  /*
+    Home tab 配置
+  */
   tabTitles: [{
     title: '首页',
     icon: 'https://gw.alicdn.com/tfs/TB1MWXdSpXXXXcmXXXXXXXXXXXX-72-72.png',
@@ -21275,58 +21279,174 @@ exports.default = {
     textPaddingLeft: 10,
     textPaddingRight: 10
   },
-  duration: 0,
-  // 使用 iconFont 模式的tab title配置
-  tabIconFontTitles: [{
-    title: '首页',
-    codePoint: '\uE623'
-  }, {
-    title: '特别推荐',
-    codePoint: '\uE608'
-  }, {
-    title: '消息中心',
-    codePoint: '\uE752',
-    badge: 5
-  }, {
-    title: '我的主页',
-    codePoint: '\uE601',
-    dot: true
-  }],
-  tabIconFontStyles: {
-    bgColor: '#FFFFFF',
-    titleColor: '#666666',
-    activeTitleColor: '#3D3D3D',
-    activeBgColor: '#FFFFFF',
-    isActiveTitleBold: true,
-    width: 160,
-    height: 120,
-    fontSize: 24,
-    textPaddingLeft: 10,
-    textPaddingRight: 10,
-    iconFontSize: 50,
-    iconFontMarginBottom: 8,
-    iconFontColor: '#333333',
-    activeIconFontColor: 'red',
-    iconFontUrl: '//at.alicdn.com/t/font_501019_mauqv15evc1pp66r.ttf'
-  }
+  duration: 0
 };
 
 /***/ }),
-/* 253 */,
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(254)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(255)
+
+/* template */
+var __vue_template__ = __webpack_require__(256)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/src/components/pages/homepage.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-682efb69"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
 /* 254 */
 /***/ (function(module, exports) {
 
+module.exports = {
+  "list-container": {
+    "height": 100,
+    "width": "750",
+    "marginTop": 0,
+    "marginRight": 0,
+    "marginBottom": 0,
+    "marginLeft": 0
+  },
+  "cell-container": {
+    "width": "750",
+    "marginTop": 0,
+    "marginRight": 0,
+    "marginBottom": 0,
+    "marginLeft": 0,
+    "height": "100",
+    "background": "white"
+  },
+  "bannerCell-container": {
+    "width": "750",
+    "marginTop": 0,
+    "marginRight": 0,
+    "marginBottom": 0,
+    "marginLeft": 0,
+    "height": "300",
+    "background": "white"
+  },
+  "slider-container": {
+    "width": "750",
+    "height": 100
+  },
+  "banner-frame": {
+    "width": "750",
+    "height": 100,
+    "background": "black"
+  },
+  "image-frame": {
+    "width": "750",
+    "height": 100
+  }
+}
+
+/***/ }),
+/* 255 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _weexUi = __webpack_require__(7);
+
+exports.default = {
+    data: function data() {
+        return {
+            titles: [{ name: '轮播&item', identifier: "banner" }, { name: '横向Collection', identifier: "collection" }, { name: '吸附分类header', identifier: "header" }, { name: '文章Cell', identifier: "detail" }],
+            bannerList: [{ src: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }, { src: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }, { src: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }]
+        };
+    },
+
+    components: {
+        WxcCell: _weexUi.WxcCell
+    }
+}; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+/* 256 */
+/***/ (function(module, exports) {
+
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: ["app-wrapper"]
-  }, [_c('router-view', {
-    staticClass: ["r-box"]
-  }), _c('tab-bar')], 1)
+  return _c('list', {
+    staticClass: ["list-container"]
+  }, _vm._l((_vm.titles), function(title, index) {
+    return _c('wxc-cell', {
+      key: "index",
+      staticClass: ["cell-container"],
+      attrs: {
+        "title": title.name + index
+      }
+    }, [(title.identifier === 'banner') ? _c('div', {
+      staticClass: ["bannerCell-container"]
+    }, [_c('slider', {
+      staticClass: ["slider-container"],
+      attrs: {
+        "interval": "3000",
+        "autoPlay": "true"
+      }
+    }, _vm._l((_vm.bannerList), function(banner) {
+      return _c('div', {
+        staticClass: ["banner-frame"]
+      }, [_c('image', {
+        staticClass: ["image-frame"],
+        attrs: {
+          "src": banner.src,
+          "resize": "cover"
+        }
+      })])
+    }))]) : _vm._e()])
+  }))
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
-/* 255 */
+/* 257 */
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -21341,7 +21461,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     on: {
       "wxcTabBarCurrentTabSelected": _vm.wxcTabBarCurrentTabSelected
     }
-  }, [_c('div', {
+  }, [_c('home-page', {
     staticClass: ["item-container"]
   }, [_c('text', [_vm._v("首页")])]), _c('div', {
     staticClass: ["item-container"]
@@ -21349,7 +21469,20 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["item-container"]
   }, [_c('text', [_vm._v("消息")])]), _c('div', {
     staticClass: ["item-container"]
-  }, [_c('text', [_vm._v("我的")])])])
+  }, [_c('text', [_vm._v("我的")])])], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 258 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["app-wrapper"]
+  }, [_c('router-view', {
+    staticClass: ["r-box"]
+  }), _c('tab-bar')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

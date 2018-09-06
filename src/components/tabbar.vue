@@ -5,7 +5,7 @@
     ref="wxc-tab-bar",
     title-type="icon",
     @wxcTabBarCurrentTabSelected="wxcTabBarCurrentTabSelected")
-        div.item-container
+        home-page.item-container
             text 首页
         div.item-container
             text 推荐
@@ -20,11 +20,12 @@
     import {WxcTabBar, Utils} from 'weex-ui';
     import {setTitle} from './_mods/set-nav';
     import Config from './_mods/config';
+    import HomePage from './pages/homepage';
 
     var modal = weex.requireModule('modal');
 
     export default {
-        components: {WxcTabBar},
+        components: { WxcTabBar, 'home-page': HomePage },
         data() {
             return {
                 tabStyles: Config.tabStyles,
@@ -38,9 +39,6 @@
             this.tabStyles.height = (tabbarHeight - this.tabStyles.height) + 'px';
         },
         methods: {
-            changePage(index) {
-                // this.$refs['wxc-tab-bar'].setPage(index);
-            },
             wxcTabBarCurrentTabSelected(e) {
                 const index = e.page;
                 console.log(index);
