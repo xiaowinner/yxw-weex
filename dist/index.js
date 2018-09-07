@@ -21345,10 +21345,12 @@ module.exports = {
     "marginRight": 0,
     "marginBottom": 0,
     "marginLeft": 0,
-    "height": "100",
-    "background": "white"
+    "minHeight": "100",
+    "background": "white",
+    "paddingLeft": 0,
+    "paddingRight": 0
   },
-  "bannerCell-container": {
+  "banner-container": {
     "width": "750",
     "marginTop": 0,
     "marginRight": 0,
@@ -21359,7 +21361,7 @@ module.exports = {
   },
   "slider-container": {
     "width": "750",
-    "height": 100
+    "height": "260"
   },
   "banner-frame": {
     "width": "750",
@@ -21369,6 +21371,19 @@ module.exports = {
   "image-frame": {
     "width": "750",
     "height": 100
+  },
+  "items-container": {
+    "width": "750",
+    "marginTop": "-130",
+    "height": "280",
+    "background": "none"
+  },
+  "items-background": {
+    "width": "700",
+    "marginLeft": "25",
+    "marginRight": "25",
+    "height": 100,
+    "background": "white"
   }
 }
 
@@ -21385,28 +21400,49 @@ Object.defineProperty(exports, "__esModule", {
 
 var _weexUi = __webpack_require__(7);
 
+var _homeItemsView = __webpack_require__(259);
+
+var _homeItemsView2 = _interopRequireDefault(_homeItemsView);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 exports.default = {
     data: function data() {
         return {
             titles: [{ name: '轮播&item', identifier: "banner" }, { name: '横向Collection', identifier: "collection" }, { name: '吸附分类header', identifier: "header" }, { name: '文章Cell', identifier: "detail" }],
-            bannerList: [{ src: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }, { src: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }, { src: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }]
+            bannerList: [{ image: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }, { image: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }, { image: "https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3816603155,2712346840&fm=173&app=25&f=JPEG?w=640&h=385&s=98B6029A0CB6E1C2460F59810300F0A8" }],
+            customCellStyle: {
+                width: "750px",
+                margin: "0",
+                minHeight: "100px",
+                background: "white",
+                paddingLeft: "0",
+                paddingRight: "0"
+            }
         };
     },
 
     components: {
-        WxcCell: _weexUi.WxcCell
-    }
-}; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+        WxcCell: _weexUi.WxcCell,
+        ItemsView: _homeItemsView2.default
+    },
+    mounted: {}
+};
 
 /***/ }),
 /* 256 */
@@ -21419,6 +21455,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('wxc-cell', {
       key: "index",
       staticClass: ["cell-container"],
+      style: _vm.customCellStyle,
       attrs: {
         "title": title.name + index
       }
@@ -21436,11 +21473,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }, [_c('image', {
         staticClass: ["image-frame"],
         attrs: {
-          "src": banner.src,
+          "src": banner.image,
           "resize": "cover"
         }
       })])
-    }))]) : _vm._e()])
+    })), _c('div', {
+      staticClass: ["items-container"]
+    }, [_c('items-view', {
+      staticClass: ["items-background"]
+    })], 1)]) : _vm._e()])
   }))
 },staticRenderFns: []}
 module.exports.render._withStripped = true
@@ -21483,6 +21524,126 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('router-view', {
     staticClass: ["r-box"]
   }), _c('tab-bar')], 1)
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+
+/***/ }),
+/* 259 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = []
+
+/* styles */
+__vue_styles__.push(__webpack_require__(260)
+)
+
+/* script */
+__vue_exports__ = __webpack_require__(261)
+
+/* template */
+var __vue_template__ = __webpack_require__(262)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/yuanxiaowen/Documents/GitHub/yxw-weex/src/components/homeItemsView.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-6221e4f4"
+__vue_options__.style = __vue_options__.style || {}
+__vue_styles__.forEach(function (module) {
+  for (var name in module) {
+    __vue_options__.style[name] = module[name]
+  }
+})
+if (typeof __register_static_styles__ === "function") {
+  __register_static_styles__(__vue_options__._scopeId, __vue_styles__)
+}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports) {
+
+module.exports = {
+  "background-container": {
+    "background": "blue"
+  },
+  "waterfall-container": {
+    "width": 100,
+    "height": 100,
+    "background": "blue",
+    "flexWrap": "wrap",
+    "flexDirection": "row"
+  },
+  "detail-item": {
+    "width": "50",
+    "height": "50",
+    "background": "black"
+  }
+}
+
+/***/ }),
+/* 261 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+//
+//
+//
+//
+//
+//
+
+exports.default = {
+    name: "homeItemsView",
+    data: function data() {
+        return {
+            items: [{ name: "a", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "b", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "c", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "d", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "e", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "f", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "g", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "h", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "i", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }]
+        };
+    }
+};
+
+/***/ }),
+/* 262 */
+/***/ (function(module, exports) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: ["background-container"]
+  }, _vm._l((_vm.items), function(item, index) {
+    return _c('waterfall', {
+      key: "index",
+      staticClass: ["waterfall-container"],
+      attrs: {
+        "columnCount": 4,
+        "showScrollbar": "false",
+        "columnWidth": "auto",
+        "columnGap": "0"
+      }
+    }, [_c('cell', {
+      staticClass: ["detail-item"],
+      appendAsTree: true,
+      attrs: {
+        "append": "tree"
+      }
+    })])
+  }))
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
