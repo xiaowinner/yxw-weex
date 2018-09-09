@@ -87,12 +87,10 @@
         width: 750px;
         height: 100%;
     }
-
-
     .items-container {
         width: 750px;
         margin-top: -130px;
-        height: 280px;
+        max-height: 280px;
         background: none;
     }
     .items-background {
@@ -101,5 +99,9 @@
         margin-right: 25px;
         height: 100%;
         background: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 </style>

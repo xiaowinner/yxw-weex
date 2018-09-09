@@ -1,7 +1,9 @@
 <template lang="pug">
     div.background-container
-        waterfall(:column-count="4", show-scrollbar="false", v-for="(item, index) in items", key="index", column-width="auto", column-gap="0").waterfall-container
-            cell.detail-item
+        //div.waterfall-container
+        waterfall(:column-count="2", show-scrollbar="false", v-for="(item, index) in items", key="index", column-width="auto", column-gap="0").waterfall-container
+            div(v-for="(item, index) in items", key="index").detail-item
+                text a
 </template>
 
 <script>
@@ -27,18 +29,17 @@
 
 <style scoped>
     .background-container {
-        background: blue;
+        background: white;
     }
     .waterfall-container {
-        width: 100%;
-        height: 100%;
-        background: blue;
-        flex-wrap: wrap;
+        padding: 16px;
+        display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .detail-item {
         width: 50px;
         height: 50px;
-        background: black;
     }
 </style>
