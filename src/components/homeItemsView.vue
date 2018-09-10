@@ -1,9 +1,9 @@
 <template lang="pug">
     div.background-container
-        //div.waterfall-container
-        waterfall(:column-count="2", show-scrollbar="false", v-for="(item, index) in items", key="index", column-width="auto", column-gap="0").waterfall-container
-            div(v-for="(item, index) in items", key="index").detail-item
-                text a
+        waterfall(:column-count="4", show-scrollbar="false", column-width="auto", column-gap="0").waterfall-container
+            cell(v-for="(item, index) in items", key="index").detail-item
+                div.item-content
+                    image(:src="item.src").item-image
 </template>
 
 <script>
@@ -20,7 +20,6 @@
                     {name:"f", src:"http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg"},
                     {name:"g", src:"http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg"},
                     {name:"h", src:"http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg"},
-                    {name:"i", src:"http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg"}
                 ],
             };
         },
@@ -32,14 +31,17 @@
         background: white;
     }
     .waterfall-container {
-        padding: 16px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        width: 100%;
+        height: 100%;
     }
     .detail-item {
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
+    }
+    .item-content {
+        flex: 1;
+    }
+    .item-image {
+        flex: 1;
     }
 </style>

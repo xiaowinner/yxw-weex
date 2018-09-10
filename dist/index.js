@@ -21375,19 +21375,14 @@ module.exports = {
   "items-container": {
     "width": "750",
     "marginTop": "-130",
-    "maxHeight": "280",
     "background": "none"
   },
   "items-background": {
     "width": "700",
     "marginLeft": "25",
     "marginRight": "25",
-    "height": 100,
-    "background": "white",
-    "display": "flex",
-    "flexDirection": "row",
-    "flexWrap": "wrap",
-    "justifyContent": "flex-start"
+    "height": "280",
+    "background": "white"
   }
 }
 
@@ -21501,18 +21496,18 @@ module.exports = {
     "background": "white"
   },
   "waterfall-container": {
-    "paddingTop": "16",
-    "paddingRight": "16",
-    "paddingBottom": "16",
-    "paddingLeft": "16",
-    "display": "flex",
-    "flexDirection": "row",
-    "flexWrap": "wrap",
-    "justifyContent": "space-between"
+    "width": 100,
+    "height": 100
   },
   "detail-item": {
-    "width": "50",
-    "height": "50"
+    "width": "100",
+    "height": "100"
+  },
+  "item-content": {
+    "flex": 1
+  },
+  "item-image": {
+    "flex": 1
   }
 }
 
@@ -21539,7 +21534,7 @@ exports.default = {
     name: "homeItemsView",
     data: function data() {
         return {
-            items: [{ name: "a", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "b", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "c", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "d", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "e", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "f", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "g", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "h", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "i", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }]
+            items: [{ name: "a", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "b", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "c", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "d", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "e", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "f", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "g", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }, { name: "h", src: "http://img.alicdn.com/tps/TB1zBLaPXXXXXXeXXXXXXXXXXXX-121-59.svg" }]
         };
     }
 };
@@ -21551,23 +21546,31 @@ exports.default = {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: ["background-container"]
+  }, [_c('waterfall', {
+    staticClass: ["waterfall-container"],
+    attrs: {
+      "columnCount": 4,
+      "showScrollbar": "false",
+      "columnWidth": "auto",
+      "columnGap": "0"
+    }
   }, _vm._l((_vm.items), function(item, index) {
-    return _c('waterfall', {
+    return _c('cell', {
       key: "index",
-      staticClass: ["waterfall-container"],
+      staticClass: ["detail-item"],
+      appendAsTree: true,
       attrs: {
-        "columnCount": 2,
-        "showScrollbar": "false",
-        "columnWidth": "auto",
-        "columnGap": "0"
+        "append": "tree"
       }
-    }, _vm._l((_vm.items), function(item, index) {
-      return _c('div', {
-        key: "index",
-        staticClass: ["detail-item"]
-      }, [_c('text', [_vm._v("a")])])
-    }))
-  }))
+    }, [_c('div', {
+      staticClass: ["item-content"]
+    }, [_c('image', {
+      staticClass: ["item-image"],
+      attrs: {
+        "src": item.src
+      }
+    })])])
+  }))], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 

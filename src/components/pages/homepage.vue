@@ -90,18 +90,13 @@
     .items-container {
         width: 750px;
         margin-top: -130px;
-        max-height: 280px;
         background: none;
     }
     .items-background {
         width: 700px;
         margin-left: 25px;
         margin-right: 25px;
-        height: 100%;
+        height: 280px;
         background: white;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
     }
 </style>
