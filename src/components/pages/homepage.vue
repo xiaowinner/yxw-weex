@@ -4,17 +4,20 @@
                 :style="customCellStyle",
                 v-for="(title, index) in titles",
                 key="index").cell-container
-            div(v-if="title.identifier === 'banner'").bannerCell-container
+            div(v-if="title.identifier === 'banner'").banner-container
                 slider(interval="3000", auto-play="true").slider-container
                     div(v-for="banner in bannerList").banner-frame
                         image(:src="banner.image" resize="cover").image-frame
                 div.items-container
                     items-view.items-background
+            <!--div(v-if="title.identifier === 'collection'").horizontalView-container-->
+                <!--horizontal-view.horizontalView-detail-->
 </template>
 
 <script>
     import { Utils, WxcCell, WxcGridSelect } from 'weex-ui';
     import ItemsView from '../homeItemsView';
+    import HorizontalView from '../homeHorizontalView';
 
     export default {
         data () {
@@ -43,6 +46,7 @@
         components: {
             WxcCell,
             ItemsView,
+            HorizontalView
         },
         mounted: {
 
@@ -98,5 +102,17 @@
         margin-right: 25px;
         height: 280px;
         background: white;
+    }
+
+    /*
+    顶部轮播和Items样式
+    */
+    .horizontalView-container {
+        width: 750px;
+        height: 200px;
+    }
+    .horizontalView-detail {
+        width: 100%;
+        height: 100%;
     }
 </style>
